@@ -1,5 +1,14 @@
-@import url("https://rawcdn.githack.com/SochavaAG/example-mycode/master/_common/css/reset.css");
-*
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #121212;
+}
+
 .ag-format-container {
   width: 1142px;
   margin: 0 auto;
