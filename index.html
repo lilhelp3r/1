@@ -6,11 +6,28 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="robots" content="noindex">
       <title>404</title>
-      <link href="https://afakel.ink/style.css" rel="stylesheet">
       <link rel="apple-touch-icon" href="https://afakel.ink/apple-touch-icon.png">
       <link rel="icon" href="https://afakel.ink/favicon.ico">
       <link rel="stylesheet" href="https://rawcdn.githack.com/SochavaAG/example-mycode/master/_common/css/reset.css">
-      <style class="INLINE_PEN_STYLESHEET_ID">
+   </head>
+   <body>
+      <div class="ag-page-404">
+         <div class="ag-toaster-wrap">
+            <div class="ag-toaster">
+               <div class="ag-toaster_back"></div>
+               <div class="ag-toaster_front">
+                  <div class="js-toaster_lever ag-toaster_lever"></div>
+               </div>
+               <div class="ag-toaster_toast-handler">
+                  <div class="ag-toaster_shadow"></div>
+                  <div class="js-toaster_toast ag-toaster_toast js-ag-hide"></div>
+               </div>
+            </div>
+            <canvas id="canvas-404" class="ag-canvas-404"></canvas>
+            <img class="ag-canvas-404_img" src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/404-error-smoke-from-toaster/images/smoke.png">
+         </div>
+      </div>
+      <style>
          .ag-format-container {
          width: 1142px;
          margin: 0 auto;
@@ -246,24 +263,6 @@
          }
          }
       </style>
-   </head>
-   <body>
-      <div class="ag-page-404">
-         <div class="ag-toaster-wrap">
-            <div class="ag-toaster">
-               <div class="ag-toaster_back"></div>
-               <div class="ag-toaster_front">
-                  <div class="js-toaster_lever ag-toaster_lever"></div>
-               </div>
-               <div class="ag-toaster_toast-handler">
-                  <div class="ag-toaster_shadow"></div>
-                  <div class="js-toaster_toast ag-toaster_toast js-ag-hide"></div>
-               </div>
-            </div>
-            <canvas id="canvas-404" class="ag-canvas-404"></canvas>
-            <img class="ag-canvas-404_img" src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/404-error-smoke-from-toaster/images/smoke.png">
-         </div>
-      </div>
       <script>
          (function ($) {
            $(function () {
@@ -306,7 +305,7 @@
                }
                var len = parts.length;
                ctx.clearRect(0, 0, canvas.width, canvas.height);
-               while (len--)if (parts[len].y < 0 || parts[len].lifeTime > maxLifeTime) {
+               while (len--)if (parts[len].y &lt; 0 || parts[len].lifeTime > maxLifeTime) {
                  parts.splice(len, 1)
                } else {
                  parts[len].update();
@@ -360,9 +359,8 @@
          
            });
          })(jQuery);
-               
       </script>
-      <script src="https://afakel.ink/jquery.js"></script>
+      </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
    </body>
 </html>
